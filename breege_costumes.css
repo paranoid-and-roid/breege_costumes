@@ -1,0 +1,206 @@
+body {
+	background: mintcream;
+	font-family: "Book Antiqua","Calibri Light",Cambria,Candara,"Century Gothic",Arial, Andalus, sans-serif;	
+	color: #000080;
+}
+
+#container {	
+	width: 1000px;
+	margin: 0 auto;
+	background: Lavender;
+	padding: 20px;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+}
+
+header {
+	background: url("http://www.textureonline.com/wp-content/uploads/2010/03/silk-fabric-texture-16.jpg") no-repeat;
+	text-align: center;
+	color: lavender;
+	border-radius: 20px;
+	padding: 10px 0;
+}
+
+@font-face {
+	font-family: myFirstFont;
+	src: url(fonts/BaroqueScript.ttf);
+}
+
+h1 {
+	font-family: myFirstFont, Gabriola, "Lucida Calligraphy", "Monotype Corsiva", Pristina, "Script MT Bold", Vivaldi, "Annabel Script", "Brush Script MT", "French Script MT", sans-serif;
+	font-size: 3em; 
+}
+
+header p {
+	text-align: center;	
+	font-size: 1.3em;
+}
+
+strong {
+	font-size: 1.3em;
+}
+
+ul li {
+	list-style: none;
+	padding: 5px 10px;
+	background: url("http://www.textureonline.com/wp-content/uploads/2010/03/silk-fabric-texture-16.jpg") no-repeat;
+	border-radius: 5px;
+	font-size: 22px;
+}
+
+nav {
+	width: 1000px;
+	margin: 10px auto;
+	padding: 0;
+}
+
+nav li {	
+	display: inline;	
+}
+
+nav li:not(:first-child) {	
+	margin-left: 19px;
+}
+
+li  a {
+	text-decoration: none;
+	color: lavender;	
+}
+
+aside {
+	float: left;
+	width: 20%;
+}
+ 
+#lower {
+	height: 700px;
+	margin-top: 10px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+aside ul {
+	margin-top: 110px;
+}
+
+ol {
+	float: left;
+	padding: 0;
+	width: 320px;
+}
+
+#lower ul li {	
+	width: 80%;
+	margin: 35px auto;	
+	text-align: center;
+}
+
+#lower ol li {	
+	list-style: none;
+	padding: 5px;
+	font-size: 15px;
+	text-align: left;
+	margin: 0;
+}
+
+#image_box {
+	width: 80%;
+	height: 520px;
+	float: left;
+}
+
+#image_box p, dl {	
+	padding: 20px;
+	color: purple;
+}
+
+#image_box p {
+	margin: 50px auto 10px;
+	font-size: 1.4em;
+	text-align: center;
+}
+
+#images {
+	width: 90%;
+	margin: 100px auto;
+}
+
+#images img {
+	margin: 10px .4cm;	
+}
+
+#photo {
+	margin: 50px;
+}
+
+.slide{
+	margin:0;
+	width: 640px; 
+	height:426px;
+	float: left;	
+}
+
+.slide img {
+	width: 320px;
+	height: 426px;
+	float: left;
+}
+
+#slideshowWindow 
+	{
+	width:640px;
+	height:426px;
+	top: 90px;
+	left: 55px;
+	padding:0;
+	position:relative;
+	overflow:hidden;
+	z-index: 500;
+}	
+
+#arrows, #thumbnails {
+	width: 800px;
+	float: right;
+	margin: 10px 0;
+}
+
+#arrow_left {
+	float: right;
+	margin-right: 130px;
+	width: 30px;
+	height: 46px;
+}
+
+#arrow_right {
+	width: 30px;
+	height: 46px;
+	float: right;
+	margin-right: 150px;
+}
+
+#thumbnails img {
+	height: 106.5px;
+	width: 80px;
+	margin-right: 40px;
+	float: right;
+}
+
+#thumbnails img:first-child {
+	margin-right: 100px;
+}
+
+footer {
+	width: 1040px;
+	margin: 0 auto;
+	background: url("http://www.textureonline.com/wp-content/uploads/2010/03/silk-fabric-texture-16.jpg") no-repeat;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+	
+footer p {
+	margin: 0;
+	padding: 60px;
+	color: lavender;
+	text-align: center;
+	font-size: 30px;
+}
