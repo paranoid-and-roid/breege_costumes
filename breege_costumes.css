@@ -1,6 +1,6 @@
 body {
 	background: mintcream;
-	font-family: "Book Antiqua","Calibri Light",Cambria,Candara,"Century Gothic",Arial, Andalus, sans-serif;	
+	font-family: Arial, "Book Antiqua","Calibri Light",Cambria,Candara,"Century Gothic",Arial, Andalus, sans-serif;	
 	color: #000080;
 }
 
@@ -11,13 +11,18 @@ body {
 	padding: 20px;
 	border-top-right-radius: 30px;
 	border-top-left-radius: 30px;
+	-webkit-border-top-right-radius: 30px;
+	-webkit-border-top-left-radius: 30px;
 }
 
 header {
-	background: url("http://www.textureonline.com/wp-content/uploads/2010/03/silk-fabric-texture-16.jpg") no-repeat;
+	width: 990px;
+	background: url("images/silk_fabric1.png") no-repeat;
 	text-align: center;
 	color: lavender;
 	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
 	padding: 10px 0;
 }
 
@@ -34,6 +39,7 @@ h1 {
 header p {
 	text-align: center;	
 	font-size: 1.3em;
+	padding: 0 auto;
 }
 
 strong {
@@ -43,56 +49,54 @@ strong {
 ul li {
 	list-style: none;
 	padding: 5px 10px;
-	background: url("http://www.textureonline.com/wp-content/uploads/2010/03/silk-fabric-texture-16.jpg") no-repeat;
+	background: url("images/silk_fabric.jpg") no-repeat;
 	border-radius: 5px;
 	font-size: 22px;
+	text-align: center;
+}
+li  a {
+	text-decoration: none;
+	color: lavender;
 }
 
 nav {
 	width: 1000px;
 	margin: 10px auto;
+}
+
+nav ul {
 	padding: 0;
 }
 
-nav li {	
-	display: inline;	
+nav li{
+	width: 161px;
+	display: inline-block;
+	padding: 10px 0;
+	font-size: 20px;
 }
 
 nav li:not(:first-child) {	
-	margin-left: 19px;
+	margin-left: 1px;
 }
 
-li  a {
-	text-decoration: none;
-	color: lavender;	
+.clicked, li:hover {
+	background: #00f;
 }
 
-aside {
-	float: left;
-	width: 20%;
+.clicked a {
+	color: lavender;
+}
+
+li a:hover {
+	color: lavender;
 }
  
 #lower {
 	height: 700px;
-	margin-top: 10px;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-}
-
-aside ul {
-	margin-top: 110px;
-}
-
-ol {
-	float: left;
-	padding: 0;
-	width: 320px;
 }
 
 #lower ul li {	
-	width: 80%;
-	margin: 35px auto;	
-	text-align: center;
+	margin-bottom: 40px;
 }
 
 #lower ol li {	
@@ -103,18 +107,32 @@ ol {
 	margin: 0;
 }
 
-#image_box {
-	width: 80%;
-	height: 520px;
+aside {
 	float: left;
+	width: 16%;
 }
 
-#image_box p, dl {	
+aside ul {
+	width: 80%;
+	padding: 0 20px;
+	margin: 40px auto;
+}
+
+ol {
+	float: left;
+	padding: 0;
+	width: 320px;
+}
+
+#slideshow {
+	width: 640px;
+	height: 520px;
+	margin: 0 auto;
+}
+
+#slideshow p{	
 	padding: 20px;
 	color: purple;
-}
-
-#image_box p {
 	margin: 50px auto 10px;
 	font-size: 1.4em;
 	text-align: center;
@@ -122,11 +140,17 @@ ol {
 
 #images {
 	width: 90%;
-	margin: 100px auto;
+	margin: 100px auto 10px;
 }
 
 #images img {
 	margin: 10px .4cm;	
+}
+
+#lower_text p {
+	padding: 0 80px 0 60px;
+	font-size: 18px;
+	line-height: 1.5em;
 }
 
 #photo {
@@ -137,7 +161,7 @@ ol {
 	margin:0;
 	width: 640px; 
 	height:426px;
-	float: left;	
+	position: relative;	
 }
 
 .slide img {
@@ -149,38 +173,43 @@ ol {
 #slideshowWindow 
 	{
 	width:640px;
-	height:426px;
-	top: 90px;
-	left: 55px;
-	padding:0;
-	position:relative;
+	height:550px;
+	position: relative;
+	top: 60px;
+	left: 40px;
+	margin: 0 40px;
 	overflow:hidden;
-	z-index: 500;
-}	
+	z-index: 100;
+}
 
-#arrows, #thumbnails {
+#arrow_left {
+	position: relative;
+	top: 300px;
+	left: 5px;
+	width: 30px;
+	height: 46px;
+	z-index; 1000;
+}
+
+#arrow_right {
+	position: relative;
+	top: -300px;
+	left: 750px;
+	width: 30px;
+	height: 46px;	
+	z-index: 1000;
+}
+
+ #thumbnails {
 	width: 800px;
 	float: right;
 	margin: 10px 0;
 }
 
-#arrow_left {
-	float: right;
-	margin-right: 130px;
-	width: 30px;
-	height: 46px;
-}
-
-#arrow_right {
-	width: 30px;
-	height: 46px;
-	float: right;
-	margin-right: 150px;
-}
-
 #thumbnails img {
 	height: 106.5px;
 	width: 80px;
+	margin-top: 20px;
 	margin-right: 40px;
 	float: right;
 }
@@ -192,7 +221,7 @@ ol {
 footer {
 	width: 1040px;
 	margin: 0 auto;
-	background: url("http://www.textureonline.com/wp-content/uploads/2010/03/silk-fabric-texture-16.jpg") no-repeat;
+	background: url("images/silk_fabric.jpg") no-repeat;
 	border-bottom-left-radius: 30px;
 	border-bottom-right-radius: 30px;
 }
@@ -203,4 +232,56 @@ footer p {
 	color: lavender;
 	text-align: center;
 	font-size: 30px;
+}
+
+.nav	
+	{
+	display:block;
+	//text-indent:-10000px;
+	//position:absolute;
+	cursor:pointer;
+	}
+	
+@media only screen and (min-width: 150px) and (max-width: 600px) {
+	#container {	
+	width: 90%;
+	}
+	header {
+	width: 90%;
+	padding: 0 10px;
+	}
+	nav {
+	width: 100%;
+	margin: 10px auto;
+	}
+	nav li{
+	width: 90%;
+	margin-bottom: 5px;
+	}
+	#lower {
+	height: auto;
+	}
+	aside {
+	width: 100%;	
+	}
+	#lower ul li {	
+	margin-bottom: 10px;
+	}
+	ol li {
+	width: 100%;
+	}
+	#images img {
+		width: 100%;
+	}
+	#image_box {
+		float: left;
+	}
+	aside {
+		float: right;
+	}
+	footer {
+		display: none;
+	}
+
+
 }

@@ -4,6 +4,7 @@
    <title>Breege Costumes - Film and TV Work</title>
    <meta charset=utf-8" />  
    <link rel = "stylesheet" href = "breege_costumes.css" />
+   <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
@@ -17,7 +18,7 @@
 <nav>
 	<ul>
 		<li><a href = "index.html">Home</a></li>
-		<li><a href = "film_tv.html">Film and TV</a></li>
+		<li class = "clicked"><a href = "film_tv.html" >Film and TV</a></li>
 		<li><a href = "theatre_work.html">Theatre</a></li>
 		<li><a href = "street_theatre.html">Street Theatre</a></li>
 		<li><a href = "textiles.html">Textiles</a></li>
@@ -34,9 +35,13 @@
 		</ul>
 	</aside>
 
-<div id = "image_box">
-	
+<div id = "slideshow">
+
+
+<!-- Put the arrow in here-->
+	<img src = "images/arrow10.jpg" id = "arrow_left" class = "nav" />
      <div id="slideshowWindow">
+
 	 
     <div class="slide">
 
@@ -85,33 +90,29 @@
         <img src = "images/improbable_frequency.jpg" alt = "Performer at a carnival" />
          </div>
    </div>
-
-  
-  </div>
-  
+	<!-- Put the arrow in here-->
+	<img src = "images/arrow9.jpg" id = "arrow_right" class = "nav" />
+	 </div>
+	  
   <div id = "thumbnails">
 	<img src = "images/improbable_frequency.jpg" alt = "Performer at a carnival" />
 	 <img src = "images/red_dress_side.jpg" alt = "Elaborate Blue Coat" />
 	 <img src = "images/pink_suit_large.jpg" alt = "Performer at a carnival" />
 	 <img src = "images/red_coat_detail.jpg" alt = "Performer dressed as Charlie Chaplin" />
   </div>
+  
+ 
 
-	<div id = "arrows">
-		<img src = "images/arrow9.jpg" id = "arrow_right" class = "nav" />
-		<img src = "images/arrow10.jpg" id = "arrow_left" class = "nav" />
-	</div>
-	
 </div>
 
-<footer>
+</div>
+
+  <footer>
 	<p>&copy;Breege Fahy 2014</p>
-</footer>
-
-
-</div>
+  </footer>
 
    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-   <script src="breege_costumes.js"></script>
+   <script src="breege_costumes1.js"></script>
 
 </body>
 

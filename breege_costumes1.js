@@ -7,7 +7,7 @@ $(document).ready(function() {
 		var slideShowInterval;
 		var speed = 5000;
 
-		
+		//slideShowInterval = setInterval(changePosition, speed);
 		
 		slides.wrapAll('<div id="slidesHolder"></div>')
 		
@@ -15,7 +15,10 @@ $(document).ready(function() {
 		
 		//set #slidesHolder width equal to the total width of all the slides
 		$('#slidesHolder').css('width', slideWidth * numberOfSlides);
-
+		
+		//$('#slideshow')
+		//	.prepend('<span class="nav" id="leftNav"></span>')
+		//	.append('<span class="nav" id="rightNav"></span>');
 		
 		manageNav(currentPosition);
 		
