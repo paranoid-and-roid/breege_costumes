@@ -79,7 +79,7 @@ nav li:not(:first-child) {
 	margin-left: 1px;
 }
 
-.clicked, li:hover {
+.clicked, ul li:hover {
 	background: #00f;
 }
 
@@ -87,7 +87,7 @@ nav li:not(:first-child) {
 	color: lavender;
 }
 
-li a:hover {
+ul li a:hover {
 	color: lavender;
 }
  
@@ -109,7 +109,7 @@ li a:hover {
 
 aside {
 	float: left;
-	width: 16%;
+	width: 18%;
 }
 
 .aside ul {
@@ -253,8 +253,13 @@ footer p {
 	header {
 	width: 90%;
 	padding: 0 10px;
+	margin: -30px auto 10px;
 	}
 	nav {
+	width: 100%;
+	margin: 10px auto;
+	}
+	nav ul {
 	width: 100%;
 	margin: 10px auto;
 	}
