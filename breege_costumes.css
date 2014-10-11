@@ -34,8 +34,21 @@ header {
 h1 {
 	font-family: myFirstFont, Gabriola, "Lucida Calligraphy", "Monotype Corsiva", Pristina, "Script MT Bold", Vivaldi, "Annabel Script", "Brush Script MT", "French Script MT", sans-serif;
 	font-size: 3em; 
+	margin: 0;
 }
 
+#contact{
+	height: auto;
+	margin: 10px 0 0 170px;
+	font-size: 3em;
+	padding: 10px 0 0 170px;
+	font-family: Gabriola;
+	float; left;	
+}
+
+#contact h2, p {
+	margin: 10px 0;
+}
 header p {
 	text-align: center;	
 	font-size: 1.3em;
@@ -80,19 +93,16 @@ nav li:not(:first-child) {
 }
 
 .clicked, ul li:hover {
-	background: #00f;
+	background-image: url(images/teal1.jpg);
 }
 
 .clicked a {
-	color: lavender;
-}
-
-ul li a:hover {
-	color: lavender;
+	font-weight: bold;
 }
  
 #lower {
 	height: 700px;
+	margin-top: -100px;
 }
 
 #lower ul li {	
@@ -119,7 +129,7 @@ aside {
 aside ul {
 	width: 80%;
 	padding: 0 20px;
-	margin: 40px auto;
+	margin: 10px auto;
 }
 
 ol {
@@ -149,6 +159,7 @@ ol {
 
 #images img {
 	margin: 10px .4cm;	
+	width: 220px;
 }
 
 #lower_text p {
@@ -241,8 +252,6 @@ footer p {
 .nav	
 	{
 	display:block;
-	//text-indent:-10000px;
-	//position:absolute;
 	cursor:pointer;
 	}
 	
