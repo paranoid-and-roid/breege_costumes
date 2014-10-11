@@ -43,28 +43,26 @@ angular.module('breegeApp', ['ngRoute'])
 
 		
 		.controller('MainCtrl', ['$scope', '$location', function($scope, $location) {
-			$scope.isActive = function(route) {
-        	return route === $location.path();
+				$scope.isActive = function(route) {
+	        	return route === $location.path();
 			};
 		}])
 		
 		.controller('SlideCtrl', function() {
-					var currentPosition = 0;
+			
+		var currentPosition = 0;
 		var slideWidth = 640;
 		var slides = $('.slide');
 		var numberOfSlides = slides.length;
 		var slideShowInterval;
-		var speed = 5000;
-
+		var speed = 5000;		
 		
+		slides.wrapAll('<div id="slidesHolder"></div>');
 		
-		slides.wrapAll('<div id="slidesHolder"></div>')
-		
-		slides.css({ 'float' : 'left' });
+		slides.css({ 'float':'left' });
 		
 		//set #slidesHolder width equal to the total width of all the slides
 		$('#slidesHolder').css('width', slideWidth * numberOfSlides);
-
 		
 		manageNav(currentPosition);
 		
@@ -83,13 +81,18 @@ angular.module('breegeApp', ['ngRoute'])
 		
 		function manageNav(position) {
 			//hide left arrow if position is first slide
-			if(position==0){ $('#arrow_left').css("visibility", "hidden") }
-			else { $('#arrow_left').css("visibility", "visible") }
+			if(position==0){ 
+				$('#arrow_left').css("visibility", "hidden");
+			} else { 
+				$('#arrow_left').css("visibility", "visible");
+			}
 			//hide right arrow is slide position is last slide
-			if(position==numberOfSlides-1){ $('#arrow_right').css("visibility", "hidden") }
-			else { $('#arrow_right').css("visibility", "visible") }
+			if(position==numberOfSlides-1){ 
+				$('#arrow_right').css("visibility", "hidden"); 
+			} else { 
+				$('#arrow_right').css("visibility", "visible");
+			}
 		}
-
 		
 		/*changePosition: this is called when the slide is moved by the 
         timer and NOT when the next or previous buttons are clicked*/
@@ -102,12 +105,11 @@ angular.module('breegeApp', ['ngRoute'])
 				manageNav(currentPosition);
 			}
 			moveSlide();
-		}
-		
+		}		
 		
 		//moveSlide: this function moves the slide 
 		function moveSlide() {
 				$('#slidesHolder')
                   .animate({'marginLeft' : slideWidth*(-currentPosition)});
 		}
-		});
+	});

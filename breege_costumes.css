@@ -1,5 +1,5 @@
 body {
-	background: mintcream;
+	background: #f5fffa;
 	font-family: Arial, "Book Antiqua","Calibri Light",Cambria,Candara,"Century Gothic",Arial, Andalus, sans-serif;	
 	color: #007;
 }
@@ -7,7 +7,7 @@ body {
 #container {	
 	width: 1000px;
 	margin: 0 auto;
-	background: Lavender;
+	background: #e6e6fa;
 	padding: 20px;
 	border-top-right-radius: 4px;
 	border-top-left-radius: 4px;
@@ -21,16 +21,18 @@ header {
 	width: 990px;
 	background: url("images/silk_fabric1.png") no-repeat;
 	text-align: center;
-	color: Lavender;
+	color: #e6e6fa;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	padding: 10px 0;
 }
 
-@font-face {
-	font-family: myFirstFont;
-	src: url(fonts/BaroqueScript.ttf);
+@media screen {
+	@font-face {
+		font-family: myFirstFont;
+		src: url(fonts/BaroqueScript.ttf);
+	}
 }
 
 h1 {
@@ -44,8 +46,7 @@ h1 {
 	margin: 10px 0 0 170px;
 	font-size: 3em;
 	padding: 10px 0 0 170px;
-	font-family: Gabriola;
-	float; left;	
+	font-family: Gabriola;	
 }
 
 #contact h2, p {
@@ -54,7 +55,6 @@ h1 {
 header p {
 	text-align: center;	
 	font-size: 1.3em;
-	padding: 0 auto;
 }
 
 strong {
@@ -71,7 +71,7 @@ ul li {
 }
 li  a {
 	text-decoration: none;
-	color: lavender;
+	color: #e6e6fa;
 }
 
 nav {
@@ -205,7 +205,7 @@ ol {
 	left: 5px;
 	width: 30px;
 	height: 46px;
-	z-index; 1000;
+	z-index: 1000;
 }
 
 #arrow_right {
@@ -250,7 +250,7 @@ footer {
 footer p {
 	margin: 0;
 	padding: 60px;
-	color: lavender;
+	color: #e6e6fa;
 	text-align: center;
 	font-size: 30px;
 }
