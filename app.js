@@ -1,6 +1,55 @@
-$(document).ready(function() {
-							   
-		var currentPosition = 0;
+angular.module('breegeApp', ['ngRoute'])
+
+	.config(function($routeProvider) {
+		$routeProvider
+		
+		.when('/', {
+			templateUrl: 'templates/home.html',
+			controller: 'MainCtrl'
+		})
+		.when('/Film_And_TV', {
+			templateUrl: 'templates/film_tv.html',
+			controller: 'SlideCtrl'
+		})
+		.when('/personal_commissions', {
+			templateUrl: 'templates/personal_commissions.html',
+			controller: 'SlideCtrl'
+		})
+		.when('/street_theatre', {
+			templateUrl: 'templates/street_theatre.html',
+			controller: 'SlideCtrl'
+		})
+		.when('/textiles', {
+			templateUrl: 'templates/textiles.html',
+			controller: 'SlideCtrl'
+		})
+		.when('/theatre_work', {
+			templateUrl: 'templates/theatre_work.html',
+			controller: 'SlideCtrl'
+		})
+		.when('/biography', {
+			templateUrl: 'templates/biography.html'
+		})
+		.when('/contact', {
+			templateUrl: 'templates/contact.html'
+		})
+		.when('/CV', {
+			templateUrl: 'templates/cv.html'
+		})
+		.otherwise ({
+			redirectTo: '/'
+		});
+			})
+
+		
+		.controller('MainCtrl', ['$scope', '$location', function($scope, $location) {
+			$scope.isActive = function(route) {
+        	return route === $location.path();
+			};
+		}])
+		
+		.controller('SlideCtrl', function() {
+					var currentPosition = 0;
 		var slideWidth = 640;
 		var slides = $('.slide');
 		var numberOfSlides = slides.length;
@@ -61,5 +110,4 @@ $(document).ready(function() {
 				$('#slidesHolder')
                   .animate({'marginLeft' : slideWidth*(-currentPosition)});
 		}
-
-	});
+		});

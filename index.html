@@ -1,64 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app = "breegeApp">
 <head>	 
 	<meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=11"  />     
-   <title>Breege Costumes Index Page</title> 
+   <title>Breege Costumes</title> 
    <link rel = "stylesheet" href = "breege_costumes.css" />
    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />   
 </head>
    
-
 <body>
 
-<div id = "container">
+<div id = "container" ng-controller = "MainCtrl">
 
 <header>
 <h1>Breege Costumes</h1>
 </header>
 
 <nav>
-	<ul>
-		<li class = "clicked"><a href = "index.html" >Home</a></li>
-		<li><a href = "film_tv.html">Film and TV</a></li>
-		<li><a href = "theatre_work.html">Theatre</a></li>
-		<li><a href = "street_theatre.html">Street Theatre</a></li>
-		<li><a href = "textiles.html">Textiles</a></li>
-		<li><a href = "personal_commissions.html">Commissions</a></li>
+	<ul>		
+		<li ng-class="{ clicked: isActive('/') }"><a href="#/">Home</a></li>
+		<li ng-class="{ clicked: isActive('/Film_And_TV') }"><a href="#/Film_And_TV">Film And TV</a></li>
+		<li ng-class="{ clicked: isActive('/theatre_work') }"><a href="#/theatre_work">Theatre Work</a></li>
+		<li ng-class="{ clicked: isActive('/personal_commissions') }"><a href="#/personal_commissions">Commissions</a></li>
+		<li ng-class="{ clicked: isActive('/street_theatre') }"><a href="#/street_theatre">Street Theatre</a></li>
+		<li ng-class="{ clicked: isActive('/textiles') }"><a href="#/textiles">Textiles</a></li>		
 	</ul>
 </nav>
 
 <div id = "lower">
 	<aside>
-		<ul>
-			<li><a href = "biography.html">Biography</a></li>
-			<li><a href = "cv.html">CV</a></li>			
-			<li><a href = "contact.html">Contact</a></li>
+		<ul>			
+			<li ng-class="{ clicked: isActive('/biography') }"><a href="#/biography">Biography</a></li>
+			<li ng-class="{ clicked: isActive('/contact') }"><a href="#/contact">Contact</a></li>
+			<li ng-class="{ clicked: isActive('/CV') }"><a href="#/CV">CV</a></li>			
 		</ul>
 	</aside>
-
-<div id = "image_box">
-	<div id = "images">
-	<img src = "images/black_outfit_front_cropped.jpg" alt = "Elaborate Blue Coat" />
-	<img src = "images/macnas_boy_cropped.jpg" alt = "Performer at a carnival" />
-	<img src = "images/wedding_dress_cropped.jpg" alt = "Performer dressed as Charlie Chaplin" />	
+	
+	<div ng-controller = "SlideCtrl">
+		<ng-view></ng-view>
 	</div>
-	
-	<div id = "lower_text">
-
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Nullam nec sem ac velit tincidunt molestie molestie sit amet tortor. 
-Aliquam imperdiet risus nec nulla feugiat, eget convallis risus ultricies. 
-Nunc laoreet felis vitae arcu ornare, eu pharetra odio commodo. Fusce 
-tincidunt laoreet vestibulum. Aliquam dapibus, neque a adipiscing ornare, 
-augue lectus adipiscing nunc, non semper sem turpis vel justo. 
-</p>
-
-</div>
-	
-</div>
-
-
 
 </div>
 </div>
@@ -68,7 +47,10 @@ augue lectus adipiscing nunc, non semper sem turpis vel justo.
 </footer>
 
    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-   <script src="breege_costumes.js"></script>
+   <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js'></script>
+   <script src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.js'></script> 
+   <script src="app.js"></script>
+   
 
 </body>
 

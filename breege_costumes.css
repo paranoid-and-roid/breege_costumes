@@ -1,7 +1,7 @@
 body {
 	background: mintcream;
 	font-family: Arial, "Book Antiqua","Calibri Light",Cambria,Candara,"Century Gothic",Arial, Andalus, sans-serif;	
-	color: #000080;
+	color: #007;
 }
 
 #container {	
@@ -9,20 +9,22 @@ body {
 	margin: 0 auto;
 	background: Lavender;
 	padding: 20px;
-	border-top-right-radius: 30px;
-	border-top-left-radius: 30px;
-	-webkit-border-top-right-radius: 30px;
-	-webkit-border-top-left-radius: 30px;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	-moz-border-top-right-radius: 4px;
+	-moz-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-top-left-radius: 4px;
 }
 
 header {
 	width: 990px;
 	background: url("images/silk_fabric1.png") no-repeat;
 	text-align: center;
-	color: lavender;
-	border-radius: 20px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
+	color: Lavender;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	padding: 10px 0;
 }
 
@@ -102,7 +104,7 @@ nav li:not(:first-child) {
  
 #lower {
 	height: 700px;
-	margin-top: -100px;
+	margin-top: 50px;
 }
 
 #lower ul li {	
@@ -154,7 +156,7 @@ ol {
 
 #images {
 	width: 90%;
-	margin: 100px auto 10px;
+	margin: auto;
 }
 
 #images img {
@@ -163,7 +165,7 @@ ol {
 }
 
 #lower_text p {
-	padding: 0 80px 0 60px;
+	padding: 20px 80px 0 60px;
 	font-size: 18px;
 	line-height: 1.5em;
 }
@@ -190,7 +192,7 @@ ol {
 	width:640px;
 	height:550px;
 	position: relative;
-	top: 60px;
+	top: 0;
 	left: 40px;
 	margin: 0 40px;
 	overflow:hidden;
@@ -237,8 +239,12 @@ footer {
 	width: 1040px;
 	margin: 0 auto;
 	background: url("images/silk_fabric.jpg") no-repeat;
-	border-bottom-left-radius: 30px;
-	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	-moz-border-bottom-left-radius: 6px;
+	-moz-border-bottom-right-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
 }
 	
 footer p {
@@ -289,11 +295,13 @@ footer p {
 	width: 100%;
 	}
 	#images img {
-		width: 100%;
+	width: 100%;
 	}
+	/*
 	#image_box {
 		float: left;
 	}
+	*/
 	aside {
 		float: right;
 	}
