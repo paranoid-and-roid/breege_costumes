@@ -4,37 +4,37 @@ angular.module('breegeApp', ['ngRoute'])
 		$routeProvider
 		
 		.when('/', {
-			templateUrl: 'templates/home.html',
+			templateUrl: '/templates/home.html',
 			controller: 'MainCtrl'
 		})
 		.when('/Film_And_TV', {
-			templateUrl: 'templates/film_tv.html',
+			templateUrl: '/templates/film_tv.html',
 			controller: 'SlideCtrl'
 		})
 		.when('/Personal_Commissions', {
-			templateUrl: 'templates/personal_commissions.html',
+			templateUrl: '/templates/personal_commissions.html',
 			controller: 'SlideCtrl'
 		})
 		.when('/Street_Theatre', {
-			templateUrl: 'templates/street_theatre.html',
+			templateUrl: '/templates/street_theatre.html',
 			controller: 'SlideCtrl'
 		})
 		.when('/Textiles', {
-			templateUrl: 'templates/textiles.html',
+			templateUrl: '/templates/textiles.html',
 			controller: 'SlideCtrl'
 		})
 		.when('/Theatre_Work', {
-			templateUrl: 'templates/theatre_work.html',
+			templateUrl: '/templates/theatre_work.html',
 			controller: 'SlideCtrl'
 		})
 		.when('/Biography', {
-			templateUrl: 'templates/biography.html'
+			templateUrl: '/templates/biography.html'
 		})
 		.when('/Contact', {
-			templateUrl: 'templates/contact.html'
+			templateUrl: '/templates/contact.html'
 		})
 		.when('/CV', {
-			templateUrl: 'templates/cv.html'
+			templateUrl: '/templates/cv.html'
 		})
 		.otherwise ({
 			redirectTo: '/'
