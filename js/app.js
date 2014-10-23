@@ -1,6 +1,6 @@
 angular.module('breegeApp', ['ngRoute'])
 
-	.config(function($routeProvider) {
+	.config(['$routeProvider', '$locationprovider', function($routeProvider, $locationProvider) {
 		$routeProvider
 		
 		.when('/', {
@@ -11,26 +11,26 @@ angular.module('breegeApp', ['ngRoute'])
 			templateUrl: 'templates/film_tv.html',
 			controller: 'SlideCtrl'
 		})
-		.when('/personal_commissions', {
+		.when('/Personal_Commissions', {
 			templateUrl: 'templates/personal_commissions.html',
 			controller: 'SlideCtrl'
 		})
-		.when('/street_theatre', {
+		.when('/Street_Theatre', {
 			templateUrl: 'templates/street_theatre.html',
 			controller: 'SlideCtrl'
 		})
-		.when('/textiles', {
+		.when('/Textiles', {
 			templateUrl: 'templates/textiles.html',
 			controller: 'SlideCtrl'
 		})
-		.when('/theatre_work', {
+		.when('/Theatre_Work', {
 			templateUrl: 'templates/theatre_work.html',
 			controller: 'SlideCtrl'
 		})
-		.when('/biography', {
+		.when('/Biography', {
 			templateUrl: 'templates/biography.html'
 		})
-		.when('/contact', {
+		.when('/Contact', {
 			templateUrl: 'templates/contact.html'
 		})
 		.when('/CV', {
@@ -39,7 +39,7 @@ angular.module('breegeApp', ['ngRoute'])
 		.otherwise ({
 			redirectTo: '/'
 		});
-			})
+			}])
 
 		
 		.controller('MainCtrl', ['$scope', '$location', function($scope, $location) {

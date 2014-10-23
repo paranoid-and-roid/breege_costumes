@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" ng-app = "breegeApp">
 <head>	 
-   <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=11"  />     
+   <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=11"  /> 
+   <base href = "/" />    
    <title>Breege Costumes</title> 
    <link rel = "stylesheet" href = "css/breege_costumes.css" />
    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />   
@@ -17,21 +18,21 @@
 
 <nav>
 	<ul>		
-		<li ng-class="{ clicked: isActive('/') }"><a href="#/">Home</a></li>
-		<li ng-class="{ clicked: isActive('/Film_And_TV') }"><a href="#/Film_And_TV">Film And TV</a></li>
-		<li ng-class="{ clicked: isActive('/theatre_work') }"><a href="#/theatre_work">Theatre Work</a></li>
-		<li ng-class="{ clicked: isActive('/personal_commissions') }"><a href="#/personal_commissions">Commissions</a></li>
-		<li ng-class="{ clicked: isActive('/street_theatre') }"><a href="#/street_theatre">Street Theatre</a></li>
-		<li ng-class="{ clicked: isActive('/textiles') }"><a href="#/textiles">Textiles</a></li>		
+		<li ng-class="{ clicked: isActive('/') }"><a href="/">Home</a></li>
+		<li ng-class="{ clicked: isActive('/Film_And_TV') }"><a href="/Film_And_TV">Film And TV</a></li>
+		<li ng-class="{ clicked: isActive('/Theatre_Work') }"><a href="/Theatre_Work">Theatre Work</a></li>
+		<li ng-class="{ clicked: isActive('/Personal_Commissions') }"><a href="/Personal_Commissions">Commissions</a></li>
+		<li ng-class="{ clicked: isActive('/Street_Theatre') }"><a href="/Street_Theatre">Street Theatre</a></li>
+		<li ng-class="{ clicked: isActive('/Textiles') }"><a href="/Textiles">Textiles</a></li>		
 	</ul>
 </nav>
 
 <div id = "lower">
 	<aside>
 		<ul>			
-			<li ng-class="{ clicked: isActive('/biography') }"><a href="#/biography">Biography</a></li>
-			<li ng-class="{ clicked: isActive('/contact') }"><a href="#/contact">Contact</a></li>
-			<li ng-class="{ clicked: isActive('/CV') }"><a href="#/CV">CV</a></li>			
+			<li ng-class="{ clicked: isActive('/Biography') }"><a href="/Biography">Biography</a></li>
+			<li ng-class="{ clicked: isActive('/Contact') }"><a href="/Contact">Contact</a></li>
+			<li ng-class="{ clicked: isActive('/CV') }"><a href="/CV">CV</a></li>			
 		</ul>
 	</aside>
 	
