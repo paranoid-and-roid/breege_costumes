@@ -31,7 +31,7 @@ header {
 @media screen {
 	@font-face {
 		font-family: myFirstFont;
-		src: url(fonts/BaroqueScript.ttf);
+		src: url("/fonts/BaroqueScript.ttf");
 	}
 }
 
