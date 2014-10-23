@@ -1,6 +1,6 @@
 angular.module('breegeApp', ['ngRoute'])
 
-	.config(['$routeProvider', '$locationprovider', function($routeProvider, $locationProvider) {
+	.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 		$routeProvider
 		
 		.when('/', {
