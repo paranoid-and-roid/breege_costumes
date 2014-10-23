@@ -1,0 +1,23 @@
+{
+  "name": "breege-costumes",
+  "version": "1.0.0",
+  "description": "A site for Brege's Costume Making Business",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paranoid-and-roid/breege_costumes.git"
+  },
+  "author": "Patrick Dunlevy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paranoid-and-roid/breege_costumes/issues"
+  },
+  "homepage": "https://github.com/paranoid-and-roid/breege_costumes",
+  "devDependencies": {
+    "body-parser": "~1.9.1",
+    "express": "~4.9.8"
+  }
+}
