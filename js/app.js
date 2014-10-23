@@ -11,26 +11,26 @@ angular.module('breegeApp', ['ngRoute'])
 			templateUrl: '/templates/film_tv.html',
 			controller: 'SlideCtrl'
 		})
-		.when('/Personal_Commissions', {
+		.when('/personal_commissions', {
 			templateUrl: '/templates/personal_commissions.html',
 			controller: 'SlideCtrl'
 		})
-		.when('/Street_Theatre', {
+		.when('/street_theatre', {
 			templateUrl: '/templates/street_theatre.html',
 			controller: 'SlideCtrl'
 		})
-		.when('/Textiles', {
+		.when('/textiles', {
 			templateUrl: '/templates/textiles.html',
 			controller: 'SlideCtrl'
 		})
-		.when('/Theatre_Work', {
+		.when('/theatre_work', {
 			templateUrl: '/templates/theatre_work.html',
 			controller: 'SlideCtrl'
 		})
-		.when('/Biography', {
+		.when('/biography', {
 			templateUrl: '/templates/biography.html'
 		})
-		.when('/Contact', {
+		.when('/contact', {
 			templateUrl: '/templates/contact.html'
 		})
 		.when('/CV', {
