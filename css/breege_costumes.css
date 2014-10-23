@@ -19,7 +19,7 @@ body {
 
 header {
 	width: 990px;
-	background: url("images/silk_fabric1.png") no-repeat;
+	background: url("/images/silk_fabric1.png") no-repeat;
 	text-align: center;
 	color: #e6e6fa;
 	border-radius: 5px;
@@ -64,7 +64,7 @@ strong {
 ul li {
 	list-style: none;
 	padding: 5px 10px;
-	background: url("images/silk_fabric.jpg") no-repeat;
+	background: url("/images/silk_fabric.jpg") no-repeat;
 	border-radius: 5px;
 	font-size: 22px;
 	text-align: center;
@@ -95,13 +95,13 @@ nav li:not(:first-child) {
 }
 
 .clicked, ul li:hover {
-	background-image: url(images/teal1.jpg);
+	background-image: url("/images/teal1.jpg");
 }
-
+/*
 .clicked a {
 	font-weight: bold;
 }
- 
+ */
 #lower {
 	height: 700px;
 	margin-top: 50px;
@@ -201,7 +201,7 @@ ol {
 
 #arrow_left {
 	position: relative;
-	top: 300px;
+	top: 200px;
 	left: 5px;
 	width: 30px;
 	height: 46px;
@@ -210,7 +210,7 @@ ol {
 
 #arrow_right {
 	position: relative;
-	top: -300px;
+	top: -400px;
 	left: 750px;
 	width: 30px;
 	height: 46px;	
@@ -238,7 +238,7 @@ ol {
 footer {
 	width: 1040px;
 	margin: 0 auto;
-	background: url("images/silk_fabric.jpg") no-repeat;
+	background: url("/images/silk_fabric.jpg") no-repeat;
 	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;
 	-moz-border-bottom-left-radius: 6px;
