@@ -1,7 +1,7 @@
 body {
 	background: #f5fffa;
 	font-family: Arial, "Book Antiqua","Calibri Light",Cambria,Candara,"Century Gothic",Arial, Andalus, sans-serif;	
-	color: #007;
+	color: #005;
 }
 
 #container {	
@@ -117,6 +117,8 @@ aside li {
 aside {
 	float: left;
 	width: 18%;
+	height: 100%;
+	overflow: hidden;
 }
 
 aside ul {
@@ -146,25 +148,49 @@ ol {
 }
 
 #images {
-	width: 90%;
+	width: 82%;
+	float: left;
 	margin: auto;
 }
-
-#images img {
-	margin: 15px .4cm;	
-	width: 220px;
+#upper_image {
+	width: 100%;
+	float: left;
 }
 
-#lower_text p {
+.inner_image {
+	width: 33.33%;
+	float: left;	
+}
+
+.inner_image img {	
+	display: block;	
+	width: 220px;
+	margin: 15px auto;
+}
+#lower_text {
 	padding: 20px 80px 0 60px;
+	margin: 30px auto;
+}
+#lower_text p {	
 	font-size: 18px;
-	line-height: 1.5em;
+	line-height: 1.7em;
+	text-align: justify;
 }
 
 #photo {
-	margin: 50px;
+	width: 82%;
+	float: left;
 }
-
+#photo img {
+	display: block;
+	width: 159px;
+	margin: 20px auto;
+}
+#photo p {
+	width; 80%;
+	padding: 20px 100px;
+	line-height: 1.7em;
+}
 .slide{
 	margin:0;
 	width: 640px; 
@@ -185,39 +211,35 @@ ol {
 	position: relative;
 	top: 0;
 	left: 40px;
-	margin: 0 40px;
-	overflow:hidden;
+	margin: -30px 40px;
+	overflow: hidden;
 	z-index: 100;
 }
-
-#arrow_left {
+#arrow_right, #arrow_left {
 	position: relative;
-	top: 200px;
-	left: 5px;
 	width: 30px;
 	height: 46px;
 	z-index: 1000;
 }
+#arrow_left {
+	top: 200px;
+	left: 5px;
+}
 
-#arrow_right {
-	position: relative;
-	top: -400px;
+#arrow_right {	
+	top: -340px;
 	left: 750px;
-	width: 30px;
-	height: 46px;	
-	z-index: 1000;
 }
 
  #thumbnails {
 	width: 800px;
 	float: right;
-	margin: 10px 0;
 }
 
 #thumbnails img {
 	height: 106.5px;
 	width: 80px;
-	margin-top: 20px;
+	margin-top: -40px;
 	margin-right: 40px;
 	float: right;
 }
@@ -252,6 +274,8 @@ footer p {
 	cursor:pointer;
 	}
 	
+// The MOBILE app
+
 @media only screen and (min-width: 150px) and (max-width: 600px) {
 	#container {	
 	width: 90%;
@@ -277,7 +301,8 @@ footer p {
 	height: auto;
 	}
 	aside {
-	width: 100%;	
+	width: 100%;
+	float: right;	
 	}
 	#lower ul li {	
 	margin-bottom: 10px;
@@ -293,12 +318,7 @@ footer p {
 		float: left;
 	}
 	*/
-	aside {
-		float: right;
-	}
 	footer {
 		display: none;
 	}
-
-
 }
